@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <header>
+College Of Early ChildHood Education--"رائدات المستقبل"
+  </header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مزيج الألوان مع تأثيرات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>مزيج الألوان</h1>
+        <div class="color-picker">
+            <label for="color1"></label>
+            <input type="color" id="color1" value="#ff0000">
+      <b>+</b>
+            <input type="color" id="color2" value="#0000ff">
+        </div>
+
+        <div class="result">
+            <h2> <b>=</b> </h2>
+            <div id="resultBox" class="result-box"></div>
+        </div>
+
+        <div class="controls">
+            <button id="mixButton">مزيج الألوان</button>
+        </div>
+
+        <audio id="sound" src="mix-sound.mp3" preload="auto"></audio>
+    </div>
+<br>
+<br>
+
+
+<div class="game-container">
+    <h1>لعبة جمع الأرقام</h1>
+
+    <b><p id="question">ما هو ناتج جمع 5 + 3 ؟</p></b>
+
+    <div class="options">
+        <button class="option" onclick="checkAnswer(7)">7</button>
+        <button class="option" onclick="checkAnswer(8)">8</button>
+        <button class="option" onclick="checkAnswer(9)">9</button>
+        <button class="option" onclick="checkAnswer(10)">10</button>
+    </div>
+
+    <p id="feedback"></p>
+  <b><p id="score">النتيجة: 0</p> </b>
+
+    <button id="next-btn" onclick="nextQuestion()" style="display:none;">السؤال التالي</button>
+    <button id="end-btn" onclick="endGame()">إنهاء اللعبة</button>
+    <button id="restart-btn" onclick="restartGame()" style="display:none;">إعادة بدء اللعبة</button>
+</div>
+<footer>"إشراف "د/فاطمة صبحي .. د/غادة المحلاوي .. <b>د/زينب حلمى</b></footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
